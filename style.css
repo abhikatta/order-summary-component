@@ -3,6 +3,7 @@
 }
 body {
   margin: 0;
+  background-color: hsl(221, 100%, 95%);
 }
 .main {
   display: flex;
@@ -10,7 +11,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsl(225, 100%, 94%);
 }
 .content {
   width: 28.125rem;
@@ -39,8 +39,11 @@ body {
   padding-right: 4rem;
   color: hsl(224, 23%, 55%);
 }
-.music-icon {
-  /* background-color: hsl(224, 23%, 55%); */
+.background {
+  top: 0;
+
+  position: absolute;
+  z-index: -2;
 }
 .plan-container {
   width: 18rem;
@@ -66,18 +69,33 @@ body {
   background-color: hsl(245, 75%, 52%);
   padding: 1rem 4rem 1rem;
 }
+.payment:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
 .change {
   color: hsl(245, 75%, 52%);
   text-decoration: underline;
 }
+.change:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
 .cancel {
-  color: hsl(224, 23%, 55%);
+  color: hsl(223, 47%, 23%);
   font-weight: 700;
   font-size: 14px;
   opacity: 40%;
-
   margin-bottom: 2rem;
 }
 .cancel:hover {
+  cursor: pointer;
+
   opacity: 100%;
+}
+
+@media (max-width: 1000px) {
+  body {
+    overflow: hidden;
+  }
 }
