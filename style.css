@@ -1,0 +1,83 @@
+* {
+  font-family: "Red Hat Display";
+}
+body {
+  margin: 0;
+}
+.main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+}
+.content {
+  width: 28.125rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -5px;
+  background-color: white;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.banner {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.heading {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+}
+.description {
+  text-align: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  color: hsl(224, 23%, 55%);
+}
+.music-icon {
+  /* background-color: hsl(224, 23%, 55%); */
+}
+.plan-container {
+  width: 18rem;
+  background-color: hsl(225, 100%, 98%);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+}
+.plan-price {
+  margin-top: -1rem;
+}
+.payment {
+  color: hsl(225, 100%, 98%);
+  font-weight: bolder;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: hsl(245, 75%, 52%);
+  padding: 1rem 4rem 1rem;
+}
+.change {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+.cancel {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  font-size: 14px;
+  opacity: 40%;
+
+  margin-bottom: 2rem;
+}
+.cancel:hover {
+  opacity: 100%;
+}
